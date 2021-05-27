@@ -27,7 +27,7 @@ export default () => {
             error.status = undefined
             error.amount = undefined
             error.universal = undefined
-            response.status(status).json({ errors: [ { message: error.message, ...error } ] })
+            response(status).json({error : [ { message: error.message, ...error } ] })
             return
         }
         throw error

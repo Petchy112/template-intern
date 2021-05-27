@@ -15,7 +15,7 @@ class UniversalError extends Error {
         if (oc(errors).length > 0) {
             errors.forEach(error => {
                 this.addError(error.key, error.message)
-            })
+            });
         }
     }
 
